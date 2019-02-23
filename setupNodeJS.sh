@@ -8,4 +8,14 @@ node -v
 echo "Node.js Express Will installing ---------";
 npm install express --save
 
+cd ~;
+if [ ! -d "WEB_SITES" ]; then
+mkdir WEB_SITES
+fi
+cd WEB_SITES
+if [ ! -d "server.js" ]
+
+fi
+
+
 # SOURCE 2 : How To Make Service : https://medium.com/@gokhansengun/linux-servisleri-nasıl-yönetir-7e2a5a8dee00
