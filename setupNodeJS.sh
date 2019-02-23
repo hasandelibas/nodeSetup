@@ -8,14 +8,17 @@ node -v
 echo "Node.js Express Will installing ---------";
 npm install express --save
 
-cd ~;
-if [ ! -d "WEB_SITES" ]; then
-mkdir WEB_SITES
-fi
-cd WEB_SITES
-if [ ! -d "server.js" ]
 
+if [ ! -d ~/WEB_SITES ]; then
+mkdir ~/WEB_SITES
 fi
 
+if [ ! -d ~/WEB_SITES/server.js" ]; then
+cp server.js ~/WEB_SITES/server.js
+fi
+
+cp node.web.service /etc/systemd/system/
+systemctl enable node.web.service
+systemctl start node.web.service
 
 # SOURCE 2 : How To Make Service : https://medium.com/@gokhansengun/linux-servisleri-nasıl-yönetir-7e2a5a8dee00
